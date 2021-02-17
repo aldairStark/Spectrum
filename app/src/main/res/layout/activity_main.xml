@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/materialButtonToggleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="ListView Personas" />
+
+        <Button
+            android:id="@+id/btnLvwProd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="ListView Productos" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButtonToggleGroup"
+        app:layout_constraintVertical_bias="0.05">
+
+        <Button
+            android:id="@+id/rvwSupers"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Heroes"/>
+        <Button
+            android:id="@+id/rvwPeliculas"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Movies"/>
+        <Button
+            android:id="@+id/btnFragments"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="fragments"/>
+        <Button
+            android:id="@+id/btnAsync"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="fragments"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
